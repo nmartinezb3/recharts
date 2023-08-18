@@ -122,7 +122,7 @@ export function ReferenceLine(props: Props) {
 
   warn(alwaysShow === undefined, 'The alwaysShow prop is deprecated. Please use ifOverflow="extendDomain" instead.');
 
-  const scales = createLabeledScales({ x: xAxis.scale, y: yAxis.scale });
+  const scales = createLabeledScales({ x: xAxis?.scale, y: yAxis?.scale });
 
   const isX = isNumOrStr(fixedX);
   const isY = isNumOrStr(fixedY);
